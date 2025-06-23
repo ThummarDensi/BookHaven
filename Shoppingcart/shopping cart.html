@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookHaven - Cart</title>
+    <link rel="icon" href="../Images/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="shopping cart.css">
+</head>
+
+<body>
+    <div class="top-nav">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center py-1">
+                <div class="social-links">
+                    <a href="https://www.facebook.com/share/1GCD3mraP1"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://x.com/DensiThumm18410"><i class="fab fa-twitter"></i></a>
+                    <a href="https://github.com/ThummarDensi"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/densi-thummar-42338526a"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <div class="auth-links d-flex">
+                    <a href="../Login/login.html" id="login-link"><i class="fas fa-user"></i> Login</a>
+                    <a href="../Register/register.html" id="register-link"><i class="fas fa-user-plus"></i> Register</a>
+                    <a href="../Profile/profile.html" id="profile-link" style="display: none;"><i
+                            class="fas fa-user-circle"></i> Profile</a>
+                    <a href="../Logout/logout.html" id="logout-link" style="display: none;"><i
+                            class="fas fa-sign-out-alt"></i> Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="main-nav">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <a href="../Home/home.html" class="logo"><i class="fas fa-book-open"></i> Book<span>Haven</span></a>
+
+                <div class="d-none d-md-flex align-items-center">
+                    <ul class="navbar-nav d-flex flex-row">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Home/home.html"><i class="fas fa-home"></i> Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../About/about us.html"><i class="fas fa-info-circle"></i>
+                                About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Shopping/shopping.html"><i class="fas fa-shopping-bag"></i>
+                                Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Contact/contact us.html"><i class="fas fa-phone"></i>
+                                Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Order/order.html"><i class="fas fa-clipboard-list"></i>
+                                Orders</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="nav-icons d-flex">
+                    <a href="../Search/search.html"><i class="fas fa-search"></i></a>
+                    <a href="../Shoppingcart/shopping cart.html" class="position-relative active">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-badge">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="breadcrumb">
+                <a href="../Home/home.html">Home</a>
+                <span>/</span>
+                <a href="../Shoppingcart/shopping cart.html">Cart</a>
+            </div>
+            <h1 class="display-4 text-white">Your Shopping Cart</h1>
+        </div>
+    </section>
+
+    <section class="cart-section text-center">
+        <div class="container text-center">
+            <h1 class="h1 text-center">Products Added</h1>
+            <div class="cart-container" id="cartContainer">
+                <!-- Cart items will be dynamically inserted here -->
+            </div>
+            <div class="cart-actions">
+                <button class="button4 button5"><a href="../Checkout/checkout.html">Clear Cart</a></button>
+                <div class="grand-total">
+                    <h3>Cart Total Items: <span id="cartItemCount">0</span> Item(s)</h3>
+                    <h3>Grand Total: <span id="grandTotal">₹0</span></h3>
+                    <button class="b1"><a href="../Shopping/shopping.html">Continue Shopping</a></button>
+                    <!-- <button class="b1"><a href="../Checkout/checkout.html">Proceed to Checkout</a></button> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 footer-col">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="../Home/home.html">Home</a></li>
+                        <li><a href="../About/about us.html">About Us</a></li>
+                        <li><a href="../Shopping/shopping.html">Shop</a></li>
+                        <li><a href="../Contact/contact us.html">Contact</a></li>
+                        <li><a href="../Order/order.html">My Orders</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 footer-col">
+                    <h4 class="footer-title">Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-book"></i> Fiction</a></li>
+                        <li><a href="#"><i class="fas fa-book"></i> Non-Fiction</a></li>
+                        <li><a href="#"><i class="fas fa-book"></i> Science Fiction</a></li>
+                        <li><a href="#"><i class="fas fa-book"></i> Mystery & Thriller</a></li>
+                        <li><a href="#"><i class="fas fa-book"></i> Biography</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 footer-col">
+                    <h4 class="footer-title">Contact Info</h4>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+123-456-7890</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@bookhaven.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Book Street, BK 12345</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 footer-col">
+                    <h4 class="footer-title">Follow Us</h4>
+                    <div class="social-footer">
+                        <a href="https://www.facebook.com/share/1GCD3mraP1"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/DensiThumm18410"><i class="fab fa-twitter"></i></a>
+                        <a href="https://github.com/ThummarDensi"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/densi-thummar-42338526a"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="mt-4">
+                        <h5 class="footer-title">Newsletter</h5>
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Your Email">
+                            <button class="btn btn-primary">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <div class="container">
+                <p>&copy; 2025 BookHaven. All Rights Reserved. | Designed with <i class="fas fa-heart text-danger"></i>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile/Tablet View Indicator -->
+    <div class="mobile-tablet-view animate__animated animate__pulse animate__infinite">
+        <i class="fas fa-mobile-alt me-2"></i> Mobile/Tablet View
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="shopping cart.js"></script>
+</body>
+
+</html>

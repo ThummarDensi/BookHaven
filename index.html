@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Selling</title>
+    <link rel="icon" href="../Images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #e0eafc, #cfdef3);
+        }
+        .logo-container {
+            text-align: center;
+            padding: 20px;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #333;
+            animation: fadeInScale 1s ease-in-out, subtleBounce 2s ease-in-out infinite;
+            transition: transform 0.3s ease;
+        }
+        .logo:hover {
+            animation: pulse 0.5s ease-in-out;
+            transform: scale(1.1);
+        }
+        .logo i {
+            margin-right: 10px;
+            color: #0066cc;
+            animation: iconSpin 4s linear infinite;
+        }
+        .logo span {
+            color: #ff6600;
+        }
+        @keyframes fadeInScale {
+            0% {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        @keyframes subtleBounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.15);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        @keyframes iconSpin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        /* Tablet view (max-width: 768px) */
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 2rem;
+                animation: fadeInScale 1s ease-in-out, subtleBounce 2.5s ease-in-out infinite;
+            }
+            .logo i {
+                margin-right: 8px;
+                font-size: 1.8rem;
+            }
+            .logo-container {
+                padding: 15px;
+            }
+        }
+        /* Mobile view (max-width: 480px) */
+        @media (max-width: 480px) {
+            .logo {
+                font-size: 1.5rem;
+                animation: fadeInScale 1s ease-in-out, subtleBounce 3s ease-in-out infinite;
+            }
+            .logo i {
+                margin-right: 6px;
+                font-size: 1.3rem;
+            }
+            .logo-container {
+                padding: 10px;
+            }
+            .logo:hover {
+                transform: scale(1.05);
+                animation: pulse 0.7s ease-in-out;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+        <a href="./Home/home.html" class="logo"><i class="fas fa-book-open"></i> Book<span>Haven</span></a>
+    </div>
+</body>
+</html>
