@@ -192,12 +192,6 @@ const products = [
         image: "../Images/The_Odyssey.jpg",
     },
     {
-        title: "The Art of War",
-        author: "Sun Tzu",
-        price: "₹240",
-        image: "../Images/The_Art_Of_War.jpg",
-    },
-    {
         title: "Thank You for Leaving",
         author: "Unknown",
         price: "₹290",
